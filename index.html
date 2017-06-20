@@ -1,9 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Sandwich Maker Exercise</title>
 </head>
 <body>
 
+<!-- Your project should have one HTML file that has:
+
+A section of options for each sandwich part:
+
+bread
+meat
+cheese
+condiments
+veggies
+
+The ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")
+
+An empty DOM element into which the final sandwich order and its cost will be inserted -->
+
+	<h1>Sandwich Maker</h1>
+
+	<h2>Step 1. Choose Bread:</h2>
+	<select id="bread-chooser" multiple>
+	  <option value="white">White</option>
+	  <option value="wheat">Wheat</option>
+	  <option value="italian">Italian</option>
+	  <option value="flat_bread">Flat Bread</option>
+	</select>
+	<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+	<h2>Step 2. Choose Meat:</h2>
+	<select id="meat-chooser" multiple>
+		<option value="none">None</option>
+	  <option value="turkey">Turkey</option>
+	  <option value="salami">Salami</option>
+	  <option value="ham">Ham</option>
+	  <option value="tuna">Tuna</option>
+	  <option value="pepperoni">Pepperoni</option>
+	  <option value="bacon">Bacon</option>
+	</select>
+	<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+	<h2>Step 3. Choose Cheese:</h2>
+	<select id="cheese-chooser" multiple>
+		<option value="none">None</option>
+	  <option value="american">American</option>
+	  <option value="cheddar">Cheddar</option>
+	  <option value="parmesean">Parmesean</option>
+	  <option value="swiss">Swiss</option>
+	  <option value="mozzarella">Mozzarella</option>
+	  <option value="pepper_jack">Pepper Jack</option>
+	</select>
+	<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+	<h2>Step 4. Choose Veggies:</h2>
+	<select id="veggie-chooser" multiple>
+		<option value="none">None</option>
+	  <option value="lettuce">Lettuce</option>
+	  <option value="spinach">Spinach</option>
+	  <option value="cucumber">Cucumber</option>
+	  <option value="olives">Olives</option>
+	  <option value="pickles">Pickles</option>
+	  <option value="peppers">Peppers</option>
+	</select>
+	<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+	<h2>Step 5. Choose Condiments:</h2>
+	<select id="condiment-chooser" multiple>
+		<option value="none">None</option>
+	  <option value="ranch">Ranch</option>
+	  <option value="mayo">Mayo</option>
+	  <option value="mustard">Mustard</option>
+	  <option value="honey_mustard">Honey Mustard</option>
+	</select>
+	<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+	<div id="final-sandwich-order"></div>
+
+
+<script src="javascripts/SandwichMaker.js"></script>
+<script src="javascripts/meats.js"></script>
+<script src="javascripts/DOMHandler.js"></script>
 </body>
 </html>
